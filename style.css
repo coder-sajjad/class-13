@@ -1,0 +1,34 @@
+@font-face {
+    font-family: TickingTimebombBB;
+    src: url(./fonts/TickingTimebombBB.ttf);
+}
+
+.digitalClock{
+    background: url(./img/vcca9hbv30i.jpg) no-repeat center center;
+    background-size: contain;
+    width: 450px ;
+    height: 450px;
+    margin: 50px auto;
+    border: 2px solid green;
+    position: relative;
+}
+.digitalClock h2{
+   
+}
+.mainClock {
+    position: absolute;
+    top: 35%;
+    left: 103px;
+    right: 0;
+    color: red;
+}
+.mainClock h4{
+    font-size: 42px;
+    line-height: 40px;
+    font-family: TickingTimebombBB;
+}
+
+#second{
+    font-size: 30px;
+    margin-top: px;
+}
