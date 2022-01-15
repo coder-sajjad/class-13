@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 
@@ -14,25 +15,112 @@
   </head>
   <body>
 
+    <!-- DIGITAL CLOCK -->
     <div class="container">
       <div class="row">
           <div class="col-md-12">
-              <div class="digitalClock">
-                  <h3 class="text-center bg-success text-white py-2">Digital Clock</h3>
+              <div class="digitalClock shadow">
+                  <h3 class="text-center bg-success text-white py-2">DIGITAL CLOCK</h3>
                   <div class="mainClock">
                     <h4 id="hour">00</h4>
                     <h4 id="minute">00</h4>
                     <h4 id="second">00</h4>
-                    <div class="fullDate">
-                      <span id="day"></span>
-                      <span id="month"></span>
-                      <span id="year"></span>
-                    </div>
+                  </div>
+                  <div class="mainDate">
+                    
+                  </div>
+                  <div class="allIcon">
+                    <i class="fas fa-battery-full"></i>
                   </div>
               </div>
           </div>
       </div>
     </div>
+
+    <hr>
+    <!-- COUNTER LOADER -->
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="my_leader card shadow mx-auto mt-5">
+            <div class="card-title">
+              <h3 class="text-center bg-info py-2 text-white">COUNDER WIDTH LOADER</h3>
+            </div>
+            <div class="card-body">
+              <input id="inputCount" type="text" class="form-control shadow-none mb-3" placeholder="Type value use number">
+              <button id="start" class="btn shadow-none btn-info" >Start</button>
+              <button id="stop" class="btn shadow-none btn-danger" >Stop</button>
+              <button id="reset" class="btn shadow-none btn-success" >Reset</button>
+               <h1 id="value" class="py-2 mt-3 text-warning">0</h1>
+              <div class="progress mt-3">
+                <div id="widthPro" class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h5></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <!-- TO DO APP -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="todoApp card shadow mx-auto mt-5">
+            <div class="card-title">
+              <h3 class="text-center py-2 bg-primary text-white">TODO APP</h3>
+              <div class="card-body">
+                <div class="todoOutput"></div>
+                <div class="">
+                  <div class="form-group">
+                    <input id="todo" type="text" class="form-control shadow-none" placeholder="Your todo">
+                  </div>
+                  <div class="form-group text-center mt-3">
+                    <input id="add" type="submit" class="btn btn-primary shadow-none" value="Add">
+                  </div>
+                  <ul id="listAdd" class="list-group mt-3">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <!-- SUBJECT MARKS WITH COLOR -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="marks card">
+            <div class="card-title">
+              <h3 class="text-center py-2 bg-info text-white">SUBJECT MARKS WITH COLOR</h3>
+            </div>
+            <div class="card-body">
+              <div id="mesge" class="mb-3">
+
+              </div>
+              <div class="form-group mb-3">
+                <input id="youName" type="text" class="form-control shadow-none" placeholder="Your Name">
+              </div>
+              <div class="form-group mb-3">
+                <input id="subject" type="text" class="form-control shadow-none" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <input id="mark" type="text" class="form-control shadow-none" placeholder="Mark">
+              </div>
+              <div class="form-group mt-3">
+                <input id="submit" type="submit" class="btn btn-info shadow-none w-100 font-weight-bold" value="SUBMIT">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
 
