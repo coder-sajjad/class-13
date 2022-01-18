@@ -12,9 +12,6 @@
     border: 2px solid green;
     position: relative;
 }
-.digitalClock h2{
-   
-}
 .mainClock {
     position: absolute;
     top: 32%;

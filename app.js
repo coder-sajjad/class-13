@@ -126,18 +126,12 @@ submit.addEventListener('click', function(){
 
     if( anyNames == '' || anySubject == '' || anyMarks == '' ){
         mesge.innerHTML = `<p class="alert alert-danger">All fields are required</p>`;
-    }else if( anyMarks > 0 && anyMarks < 33 ){
-        mesge.innerHTML = `<p class="alert alert-danger">"Hi ${anyNames} Your are failed" Your Subject : ${subject.value}, Marks : ${mark.value} </p>`;
-    }else if( anyMarks > 33 && anyMarks < 40 ){
-        mesge.innerHTML = `<p class="alert alert-primary">"Hi ${anyNames} Your are Passed" Your Subject : ${subject.value}, Marks : ${mark.value} </p>`;
-    }else if( anyMarks > 40 && anyMarks < 50 ){
-        mesge.innerHTML = `<p class="alert alert-info">"Hi ${anyNames} Your are Passed" Your Subject : ${subject.value}, Marks : ${mark.value} </p>`;
-    }else if( anyMarks > 50 && anyMarks < 60 ){
-        mesge.innerHTML = `<p class="alert alert-warning">"Hi ${anyNames} Your are Passed" Your Subject : ${subject.value}, Marks : ${mark.value} </p>`;
-    }else if( anyMarks > 70 && anyMarks < 80 ){
-        mesge.innerHTML = `<p class="alert alert-black">"Hi ${anyNames} Your are Passed" Your Subject : ${subject.value}, Marks : ${mark.value} </p>`;
-    }else if( anyMarks > 80 && anyMarks <= 100 ){
-        mesge.innerHTML = `<p class="alert alert-success">"Hi ${anyNames} Your are Golden" Your Subject : ${subject.value}, Marks : ${mark.value} </p>`;
+    }else{
+        mesge.innerHTML = result(anyNames, anySubject, anyMarks);
     }
+
+    youName.value = '';
+    subject.value = '';
+    mark.value = '';
 
 });
